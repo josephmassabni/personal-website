@@ -1,0 +1,204 @@
+/* Google Fonts */
+h1 {
+  font-family: 'Knewave', sans-serif;
+  font-size: 90px; /* Keeps Size Relative */
+  text-shadow: 4px 4px #000000;
+}
+
+h3 {
+  font-family: 'Kalam', cursive;
+}
+
+.btn-lg {
+  font-family: 'Knewave', sans-serif;
+  font-size: 25px;
+  color: black;
+  border-radius: 200px;
+  background-color: white;
+  border-style: hidden;
+  box-shadow: 3px 3px 1.5px black;
+}
+.btn-lg:hover {
+  box-shadow: 0px 0px 10px black;
+  font-size: 28px;
+  background-color: gray;
+}
+
+
+/* Jumbotron Styling for Index Page */
+.introJumbotron {
+  position: relative;
+  height: 100vh;
+}
+/* Styling for videobackground id for introJumbotron Background */
+#videobackground {
+  position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+/* Ensures all objects in container are usable and "above" the background */
+.introJumbotron .container {
+  z-index: 2;
+  position: relative;
+}
+
+
+/* "Divider" used in many pages */
+.jumbotronDivider{
+  height: 50px;
+  background-color: black;
+}
+
+/* Jumbotron for Resume page */
+.jumbotronResume {
+  height:600px;
+  background-image: url('/images/resumeImage.jpg');
+  background-color: white;
+  background-size: cover;
+}
+.jumbotronResume h1 {
+  color: white;
+}
+.containerResume h1 {
+  font-size: 35px;
+  text-shadow: 0.5px 0.5px grey;
+}
+
+/* Jumbotron for About Page */
+.jumbotronAbout {
+  height:600px;
+  background-image: url('/images/IMG_0659.jpg');
+  background-color: white;
+  background-size: cover;
+}
+.jumbotronAbout h1 {
+  color: white;
+  font-size: 76px;
+}
+.containerAbout h1 {
+  font-size: 50px;
+  text-shadow: 0.5px 0.5px grey;
+}
+.aboutImage {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 1.5px solid black;
+  box-shadow: 3px 3px 2px black;
+}
+
+
+/* Jumbotron for Work page */
+.jumbotronWork {
+  height:600px;
+  background-image: url('/images/codeImage.jpg');
+  background-color: white;
+  background-size: cover;
+}
+.jumbotronWork h1 {
+  color: white;
+}
+
+/*After beginning jumbotron for Work and About Pages */
+.jumbotronShort {
+  background-color:	#A9A9A9;
+}
+.jumbotronShort h1 {
+  font-size: 50px;
+  text-shadow: 0.5px 0.5px grey;
+}
+.jumbotronShort h3 {
+  color: white;
+}
+.containerShort h1 {
+  font-size: 50px
+}
+/* Project Cards on Work Page */
+.card {
+  box-shadow: 0px 0px 10px grey;
+}
+.card:hover {
+  box-shadow: 20px 20px 50px grey;
+}
+
+.card .fab {
+  color: black;
+  font-size: 20px;
+}
+.card .fab:hover {
+  color: black;
+  font-size: 20px;
+}
+.card .fas {
+  font-size: 16px;
+}
+.card h4 {
+  font-weight: bolder;
+}
+
+
+/* Bottom Navbar */
+.bottomNavbar {
+  height: 100px;
+  background-color: black;
+  padding-right: 20px;
+}
+.navbar-text {
+  color: white;
+}
+/* FontAwesome Icons */
+.fab, .fas {
+  color: white;
+  font-size: 45px;
+}
+.fab:hover {
+  color: gray;
+  font-size: 50px;
+}
+/*linkedin and Instagram Icon need to be special because they are stacked */
+.fa-linkedin-in {
+  font-size: 35px;
+  color: black;
+}
+.fa-linkedin-in:hover {
+  color: black;
+  font-size: 38px;
+}
+.fa-instagram {
+  font-size: 30px;
+  color: black;
+}
+.fa-instagram:hover {
+  color: black;
+  font-size: 32px;
+}
+.fa-stack:hover .fa-circle{
+  color: gray;
+  font-size: 50px;
+}
+/* Icons next to buttons have to be special */
+.fa-person-booth, .fa-chalkboard-teacher, .fa-id-card, .fa-home {
+  color: black;
+  font-size: 23px;
+}
+
+/* Makes icons on jumbotrons not "hoverable" */
+.introJumbotron .fa-stack:hover .fa-circle {
+  color: white;
+  font-size: 45px;
+}
+.jumbotronAbout .fa-stack:hover .fa-circle {
+  color: white;
+  font-size: 45px;
+}
+.jumbotronWork .fa-stack:hover .fa-circle {
+  color: white;
+  font-size: 45px;
+}
